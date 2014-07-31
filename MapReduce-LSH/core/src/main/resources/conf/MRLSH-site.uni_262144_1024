@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property>
+    <name>querySetSize</name>
+    <value>50</value>
+    <description>the size of the query set</description>
+  </property>
+
+  <property>
+    <name>ratio</name>
+    <value>2</value>
+    <description>the approximate ratio for Nearest Neighbor Search</description>
+  </property>
+
+  <property>
+    <name>baseDir</name>
+    <value>/user/wzb/Uni_262144_1024/pdlsh</value>
+    <description>the base directory for storing hash parameters and hash tables</description>
+  </property>
+
+  <property>
+    <name>pruneFactor</name>
+    <value>3</value>
+    <description>We will calculate at most (pruneFactor * l + kNeighbors) real distances for
+      a query in one radius, where l is the size of hash tables.
+    </description>
+  </property>
+
+  <property>
+    <name>dataSetFileName</name>
+    <value>/user/wzb/Uni_262144_1024/Uni_262144_1024.ds</value>
+    <description>the file name of the data set</description>
+  </property>
+
+  <property>
+    <name>querySetFileName</name>
+    <value>Uni_262144_1024.q</value>
+    <description>the file name of the query set.
+      Note that query set is placed in Hadoop's distributed cache before the job is running.
+    </description>
+  </property>
+
+  <property>
+    <name>groundTruthFileName</name>
+    <value>/user/wzb/Uni_262144_1024/Uni_262144_1024.gt</value>
+    <description>the file name of the ground truth</description>
+  </property>
+
+  <property>
+    <name>localStatResultFile</name>
+    <value>/home/hadoop/pdlshResult/pdlshUni_262144_1024.txt</value>
+    <description>the local file for the statistical result</description>
+  </property>
+</configuration>
